@@ -12,3 +12,8 @@ docker run -it --rm leg100/route53 \
 --type A. \
 --value 123.123.123.123
 ```
+
+Note: it relies on the ec2 instance possessing an IAM profile with the following privileges:
+
+ - ec2:AttachVolume
+ - ec2:DetachVolume
